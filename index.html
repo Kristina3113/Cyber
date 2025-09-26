@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css?v=1" />
     <title>Cyber</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="#" class="header__logo">
+          <svg width="65" height="22">
+            <use href="/icons/symbol-defs.svg#icon-Logo"></use>
+          </svg>
+        </a>
+        <form action="#" name="search-form" autocomplete="off" novalidate>
+          <div class="header__icon-search">
+            <svg class="icon-search" width="16" height="16">
+              <use href="/icons/symbol-defs.svg#icon-Search"></use>
+            </svg>
+          </div>
+          <div class="header__form-field">
+            <label class="header__form-label visually-hidden" for="search-form"
+              >Search</label
+            >
+            <input
+              class="header__form-input"
+              type="search"
+              id="search-form"
+              placeholder="Search"
+            />
+          </div>
+        </form>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__link">Home</li>
+            <li class="header__link">About</li>
+            <li class="header__link">Contact Us</li>
+            <li class="header__link">Blog</li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <a href="#">
+            <svg class="header__icon" width="32" height="32">
+              <use href="/icons/symbol-defs.svg#icon-Favorites"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg width="32" height="32">
+              <use
+                class="header__icon"
+                href="/icons/symbol-defs.svg#icon-Cart"
+              ></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="header__icon" width="32" height="32">
+              <use href="/icons/symbol-defs.svg#icon-User"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
