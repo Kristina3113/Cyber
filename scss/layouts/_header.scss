@@ -3,7 +3,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  //   padding-top: 16px;
 
   &__container {
     display: flex;
@@ -56,6 +55,7 @@
   }
 
   &__link {
+    cursor: pointer;
     color: #b5b5b5;
     transition: color 0.3s ease-in-out;
 
@@ -70,13 +70,44 @@
   }
 
   &__icon {
+    cursor: pointer;
     stroke: var(--color-black);
-    fill: transparent;
+    fill: none;
     transition: color 0.3s ease-in-out;
 
     &:hover {
       stroke: #b5b5b5;
       transform: scale(0.9, 0.9);
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    &__container {
+      padding: 16px;
+    }
+    &__icon-search {
+      display: none;
+    }
+    &__form-input {
+      display: none;
+    }
+    &__menu {
+      display: none;
+    }
+    &__icon {
+      display: none;
+    }
+  }
+
+  .mobile-menu__icon {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    fill: var(--color-black);
+    transition: color 0.3s ease-in-out;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+      display: none;
     }
   }
 }

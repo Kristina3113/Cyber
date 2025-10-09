@@ -1,18 +1,37 @@
 *,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-:focus,
-:active {
-  outline: none;
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+form {
+  margin: 0;
+  padding: 0;
 }
-a:focus,
-a:active {
-  outline: none;
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: var(--text-color, #000);
+  background-color: var(--background-color, #fff);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  text-size-adjust: 100%;
 }
 
 nav,
@@ -22,28 +41,30 @@ aside {
   display: block;
 }
 
-html,
-body {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  color: black;
-  background-color: white;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  // line-height: ; розрахувати пізніше
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+ul,
+ol {
+  list-style: none;
+}
+
+:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color, currentColor);
+}
+a:hover {
+  text-decoration: underline;
 }
 
 input,
 button,
-textarea {
+textarea,
+select {
   font-family: inherit;
+  font-size: inherit;
 }
 
 input::-ms-clear {
@@ -54,32 +75,16 @@ button {
   cursor: pointer;
 }
 
-// button::-moz-focus-inner {
-//   padding: 0;
-//   border-radius: 0;
-// }
-
-a,
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-ul li {
-  list-style: none;
-  padding-inline-start: 0;
-}
-img {
-  vertical-align: top;
+textarea:not([rows]) {
+  min-height: 10em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+:target {
+  scroll-margin-block: 5ex;
 }
