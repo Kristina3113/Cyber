@@ -81,19 +81,13 @@
     }
   }
 
-  @media screen and (max-width: $breakpoint-mobile) {
+  @media screen and (max-width: $bp-mobile) {
     &__container {
       padding: 16px;
     }
-    &__icon-search {
-      display: none;
-    }
-    &__form-input {
-      display: none;
-    }
-    &__menu {
-      display: none;
-    }
+    &__icon-search,
+    &__form-input,
+    &__menu,
     &__icon {
       display: none;
     }
@@ -106,7 +100,7 @@
     fill: var(--color-black);
     transition: color 0.3s ease-in-out;
 
-    @media screen and (min-width: $breakpoint-desktop) {
+    @media screen and (min-width: $bp-desktop) {
       display: none;
     }
   }

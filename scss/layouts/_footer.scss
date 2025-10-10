@@ -1,0 +1,87 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0 104px 0;
+
+  background: var(--color-black, #000);
+  color: #cfcfcf;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 104px 0 0 0;
+    gap: 24px;
+  }
+
+  &__box-logo-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  &__logo {
+    cursor: pointer;
+    stroke: none;
+    fill: white;
+  }
+
+  &__text {
+    line-height: 1.7;
+  }
+
+  &__title {
+    color: var(--color-white, #fff);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  &__services-list,
+  &__help-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    line-height: 2.2;
+  }
+
+  &__social {
+    padding-bottom: 104px;
+  }
+
+  &__social-list {
+    display: flex;
+    flex-direction: row;
+    gap: auto;
+
+    li {
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: transparent;
+        transition: background-color 0.3s ease-in-out;
+        outline: none;
+        text-decoration: none;
+
+        &:hover {
+          background-color: rgba(249, 245, 245, 0.256);
+        }
+      }
+    }
+  }
+
+  &__icon {
+    cursor: pointer;
+    transition: stroke 0.3s ease-in-out, transform 0.3s ease-in-out;
+    fill: var(--Main-White, #fff);
+    stroke-width: 2px;
+    stroke: var(--Main-White, #fff);
+  }
+}

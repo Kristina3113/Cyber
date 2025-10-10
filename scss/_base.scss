@@ -4,24 +4,21 @@
   box-sizing: border-box;
 }
 
-html,
-body,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p,
-ul,
-ol,
-form {
+p {
   margin: 0;
-  padding: 0;
 }
 
 html,
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
   color: var(--text-color, #000);
@@ -44,6 +41,8 @@ aside {
 ul,
 ol {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 :focus {
@@ -87,4 +86,8 @@ picture {
 
 :target {
   scroll-margin-block: 5ex;
+}
+
+main {
+  flex: 1;
 }
