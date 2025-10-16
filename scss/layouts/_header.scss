@@ -1,17 +1,19 @@
 .header {
   position: absolute;
+  padding: 24px 16px;
   top: 0;
   left: 0;
   width: 100%;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 16px 0;
+  }
 
   &__container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 1120px;
-    margin: auto;
-    padding: 16px 0;
   }
 
   &__icon-search {
@@ -49,6 +51,7 @@
   &__menu {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 52px;
     font-size: 16px;
     line-height: normal;
@@ -82,9 +85,6 @@
   }
 
   @media screen and (max-width: $bp-mobile) {
-    &__container {
-      padding: 16px;
-    }
     &__icon-search,
     &__form-input,
     &__menu,
