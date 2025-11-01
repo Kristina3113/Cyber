@@ -13,7 +13,7 @@
     <title>Cyber</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <div class="header__container">
           <a href="#" class="header__logo">
@@ -79,7 +79,7 @@
           </div>
         </div>
       </div>
-    </header> -->
+    </header>
 
     <main class="main">
       <section class="hero-banner">
@@ -96,7 +96,7 @@
                 </p>
               </div>
               <button
-                class="hero-banner__button"
+                class="hero-banner__button button"
                 type="button"
                 aria-label="Shop iPhone 14 Pro now"
               >
@@ -115,88 +115,96 @@
         </div>
       </section>
       <section class="banners-section">
-        <div class="banners-section__item">
-          <div class="container banners-section__container">
-            <img
-              style="height: 200px; width: 200px"
-              class="banners-section__image"
-              src="/images/featured-airpods-max-silver.webp"
-              alt="Silver Apple AirPods Max"
-            />
-            <div class="banners-section__item-content">
-              <h3 class="banners-section__item-title">
-                Apple AirPods
-                <span class="banners-section__title-accent">Max</span>
-              </h3>
-              <p class="banners-section__item-description">
-                Computational audio. Listen, it's powerful
-              </p>
+        <div class="banners-section__wrapper">
+          <div
+            class="banners-section__item banners-section__item--airpods banners-section__item--accent"
+          >
+            <div class="container banners-section__container">
+              <img
+                style="height: 200px; width: 200px"
+                class="banners-section__image"
+                src="/images/featured-airpods-max-silver.webp"
+                alt="Silver Apple AirPods Max"
+              />
+              <div class="banners-section__item-content">
+                <h3 class="banners-section__item-title">
+                  Apple AirPods
+                  <span class="banners-section__title-accent">Max</span>
+                </h3>
+                <p class="banners-section__item-description">
+                  Computational audio. Listen, it's powerful
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="banners-section__item banners-section__item--accent-gray">
-          <div class="container banners-section__container">
-            <img
-              style="height: 200px"
-              class="banners-section__image"
-              src="/images/Vision-Pro.webp"
-              alt="Apple Vision Pro headset"
-            />
-            <div class="banners-section__item-content">
-              <h3 class="banners-section__item-title">
-                Apple Vision
-                <span class="banners-section__title-accent">Pro</span>
-              </h3>
-              <p class="banners-section__item-description">
-                An immersive way to experience entertainment
-              </p>
+          <div
+            class="banners-section__item banners-section__item--vision banners-section__item--accent-gray"
+          >
+            <div class="container banners-section__container">
+              <img
+                style="height: 200px"
+                class="banners-section__image"
+                src="/images/Vision-Pro.webp"
+                alt="Apple Vision Pro headset"
+              />
+              <div class="banners-section__item-content">
+                <h3 class="banners-section__item-title">
+                  Apple Vision
+                  <span class="banners-section__title-accent">Pro</span>
+                </h3>
+                <p class="banners-section__item-description">
+                  An immersive way to experience entertainment
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="banners-section__item">
-          <div class="container banners-section__container">
-            <img
-              style="height: 200px; width: 200px"
-              class="banners-section__image"
-              src="/images/PlayStation-5.webp"
-              alt="PlayStation 5 console"
-            />
-            <div class="banners-section__item-content">
-              <h3 class="banners-section__item-title">
-                Playstation
-                <span class="banners-section__title-accent">5</span>
-              </h3>
-              <p class="banners-section__item-description">
-                Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O
-                will redefine your PlayStation experience.
-              </p>
+          <div class="banners-section__item banners-section__item--playstation">
+            <div class="container banners-section__container">
+              <img
+                style="height: 200px; width: 200px"
+                class="banners-section__image"
+                src="/images/PlayStation-5.webp"
+                alt="PlayStation 5 console"
+              />
+              <div class="banners-section__item-content">
+                <h3 class="banners-section__item-title">
+                  Playstation
+                  <span class="banners-section__title-accent">5</span>
+                </h3>
+                <p class="banners-section__item-description">
+                  Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O
+                  will redefine your PlayStation experience.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="banners-section__item banners-section__item--accent">
-          <div class="container banners-section__container">
-            <img
-              style="height: 200px; width: 330px"
-              class="banners-section__image"
-              src="/images/popular-macbook-pro.webp"
-              alt="MacBook Air with Liquid Retina display"
-            />
-            <div class="banners-section__item-content">
-              <h3 class="banners-section__item-title">
-                <span class="banners-section__title-accent">Macbook</span>
-                Air
-              </h3>
-              <p class="banners-section__item-description">
-                The new 15‑inch MacBook Air makes room for more of what you love
-                with a spacious Liquid Retina display.
-              </p>
-              <button
-                class="banners-section__button"
-                type="button"
-                aria-label="Shop MacBook Air now"
-              >
-                Shop Now
-              </button>
+          <div
+            class="banners-section__item banners-section__item--macbook banners-section__item--accent"
+          >
+            <div class="container banners-section__container">
+              <img
+                style="height: 200px; width: 330px"
+                class="banners-section__image"
+                src="/images/popular-macbook-pro.webp"
+                alt="MacBook Air with Liquid Retina display"
+              />
+              <div class="banners-section__item-content">
+                <h3 class="banners-section__item-title">
+                  <span class="banners-section__title-accent">Macbook</span>
+                  Air
+                </h3>
+                <p class="banners-section__item-description">
+                  The new 15‑inch MacBook Air makes room for more of what you
+                  love with a spacious Liquid Retina display.
+                </p>
+                <a
+                  class="banners-section__button button"
+                  type="button"
+                  aria-label="Shop MacBook Air now"
+                >
+                  Shop Now
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -205,40 +213,45 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer__container">
-          <div class="footer__box-logo-txt">
+        <div class="footer__main">
+          <div class="footer__about">
             <a href="#" class="footer__logo">
               <svg width="65" height="22">
                 <use href="/icons/symbol-defs.svg#icon-Logo"></use>
               </svg>
             </a>
-            <p class="footer__text">
+            <p class="footer__about-text">
               We are a residential interior design firm located in <br />
               Portland. Our boutique-studio offers more than
             </p>
           </div>
-          <div class="footer__services">
-            <h2 class="footer__title">Services</h2>
-            <ul class="footer__services-list">
-              <li><a href="#">Bonus program</a></li>
-              <li><a href="#">Gift cards</a></li>
-              <li><a href="#">Credit and payment</a></li>
-              <li><a href="#">Service contracts</a></li>
-              <li><a href="#">Non-cash account</a></li>
-              <li><a href="#">Payment</a></li>
-            </ul>
-          </div>
-          <div class="footer__help">
-            <h2 class="footer__title">Assistance to the buyer</h2>
-            <ul class="footer__help-list">
-              <li><a href="#">Find an order</a></li>
-              <li><a href="#">Terms of delivery</a></li>
-              <li><a href="#">Exchange and return of goods</a></li>
-              <li><a href="#">Guarantee</a></li>
-              <li><a href="#">Frequently asked questions</a></li>
-              <li><a href="#">Terms of use of the site</a></li>
-            </ul>
-          </div>
+
+          <!-- NAVIGATION -->
+          <nav class="footer__nav">
+            <div class="footer__nav-block">
+              <h2 class="footer__nav-title">Services</h2>
+              <ul class="footer__nav-list">
+                <li><a href="#">Bonus program</a></li>
+                <li><a href="#">Gift cards</a></li>
+                <li><a href="#">Credit and payment</a></li>
+                <li><a href="#">Service contracts</a></li>
+                <li><a href="#">Non-cash account</a></li>
+                <li><a href="#">Payment</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__nav-block">
+              <h2 class="footer__nav-title">Assistance to the buyer</h2>
+              <ul class="footer__nav-list">
+                <li><a href="#">Find an order</a></li>
+                <li><a href="#">Terms of delivery</a></li>
+                <li><a href="#">Exchange and return of goods</a></li>
+                <li><a href="#">Guarantee</a></li>
+                <li><a href="#">Frequently asked questions</a></li>
+                <li><a href="#">Terms of use of the site</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </div>
 
