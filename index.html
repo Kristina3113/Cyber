@@ -15,32 +15,27 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__container">
+        <div class="header__main">
           <a href="#" class="header__logo">
-            <svg width="65" height="22">
+            <svg class="header__logo-icon">
               <use href="/icons/symbol-defs.svg#icon-Logo"></use>
             </svg>
           </a>
-          <form action="#" name="search-form" autocomplete="off" novalidate>
-            <div class="header__icon-search">
-              <svg class="icon-search" width="16" height="16">
+
+          <form class="header__search" action="#" autocomplete="off">
+            <div class="header__search-wrapper">
+              <svg class="header__search-icon">
                 <use href="/icons/symbol-defs.svg#icon-Search"></use>
               </svg>
-            </div>
-            <div class="header__form-field">
-              <label
-                class="header__form-label visually-hidden"
-                for="search-form"
-                >Search</label
-              >
               <input
-                class="header__form-input"
+                class="header__search-input"
                 type="search"
-                id="search-form"
                 placeholder="Search"
+                aria-label="Search products"
               />
             </div>
           </form>
+
           <nav class="header__nav">
             <ul class="header__menu">
               <li class="header__link">Home</li>
@@ -50,20 +45,17 @@
             </ul>
           </nav>
           <div class="header__actions">
-            <a href="#">
+            <a href="#" class="header__action" aria-label="Favorites">
               <svg class="header__icon" width="32" height="32">
                 <use href="/icons/symbol-defs.svg#icon-Favorites"></use>
               </svg>
             </a>
-            <a href="#">
-              <svg width="32" height="32">
-                <use
-                  class="header__icon"
-                  href="/icons/symbol-defs.svg#icon-Cart"
-                ></use>
+            <a href="#" class="header__action" aria-label="Cart">
+              <svg class="header__icon">
+                <use href="/icons/symbol-defs.svg#icon-Cart"></use>
               </svg>
             </a>
-            <a href="#">
+            <a href="#" class="header__action" aria-label="User">
               <svg class="header__icon" width="32" height="32">
                 <use href="/icons/symbol-defs.svg#icon-User"></use>
               </svg>
@@ -71,8 +63,8 @@
           </div>
 
           <div class="mobile-menu">
-            <button class="mobile-menu__icon">
-              <svg width="40" height="40">
+            <button class="header__mobile-toggle" aria-label="Open menu">
+              <svg class="header__mobile-icon">
                 <use href="/icons/symbol-defs.svg#icon-Burger"></use>
               </svg>
             </button>
@@ -226,7 +218,6 @@
             </p>
           </div>
 
-          <!-- NAVIGATION -->
           <nav class="footer__nav">
             <div class="footer__nav-block">
               <h2 class="footer__nav-title">Services</h2>

@@ -1,0 +1,29 @@
+.button {
+  margin: 0 auto;
+  display: block;
+  transition: all 0.5s;
+  border-radius: 6px;
+  padding: 16px 56px;
+
+  background-color: inherit;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+.black-button {
+  margin: 0 auto;
+
+  display: block;
+  border-radius: 8px;
+  padding: 12px 64px;
+  background-color: #000;
+
+  color: #fff;
+  font-weight: 500;
+  line-height: 24px;
+
+  &:hover {
+    background-color: #1457e8;
+  }
+}
