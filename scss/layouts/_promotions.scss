@@ -1,0 +1,203 @@
+.promotions {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "playstation playstation"
+        "airpods vision"
+        "macbook macbook";
+    }
+
+    @include desktop {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas:
+        "playstation playstation macbook macbook"
+        "airpods vision macbook macbook";
+    }
+  }
+
+  @include tablet {
+    &__item--playstation {
+      grid-area: playstation;
+    }
+    &__item--airpods {
+      grid-area: airpods;
+    }
+    &__item--vision {
+      grid-area: vision;
+    }
+    &__item--macbook {
+      grid-area: macbook;
+    }
+  }
+
+  @include desktop {
+    &__item--playstation {
+      grid-area: playstation;
+    }
+    &__item--airpods {
+      grid-area: airpods;
+    }
+    &__item--vision {
+      grid-area: vision;
+    }
+    &__item--macbook {
+      grid-area: macbook;
+    }
+  }
+
+  /////////////////////////////////////////////////////////
+
+  &__item {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 40px 0;
+
+    @include tablet {
+      padding: 0;
+      gap: 0;
+    }
+
+    @include desktop {
+      padding: 0;
+      gap: 0;
+    }
+  }
+
+  &__item--accent-gray {
+    background: #353535;
+
+    .promotions__item-title {
+      color: var(--color-white, #fff);
+    }
+
+    .promotions__title-accent {
+      font-weight: 700;
+    }
+  }
+
+  &__item--accent {
+    background: #ededed;
+  }
+
+  &__item:nth-child(4) {
+    .promotions__item-content {
+      gap: 16px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__image {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  &__item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 10px;
+
+    @include tablet {
+      padding: 0 48px 0 0;
+    }
+
+    @include desktop {
+      padding: 0 48px 0 0;
+    }
+  }
+
+  ////////////////////////////////////////
+
+  &__item-title {
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 118%;
+    text-align: center;
+
+    @include tablet {
+      text-align: left;
+    }
+
+    @include desktop {
+      text-align: left;
+    }
+  }
+
+  &__title-accent {
+    font-weight: 500;
+  }
+
+  &__item-description {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 150%;
+    text-align: center;
+    color: #909090;
+
+    @include tablet {
+      text-align: left;
+    }
+
+    @include desktop {
+      text-align: left;
+    }
+  }
+
+  ///////////////////////////
+
+  @include tablet {
+    &__item--macbook {
+      padding: 40px 0 40px 56px;
+      .promotions__container {
+        flex-direction: row-reverse;
+        height: 100%;
+      }
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__button {
+      width: auto;
+    }
+  }
+
+  @include desktop {
+    &__item--macbook {
+      padding: 0 0 0 56px;
+      .promotions__container {
+        flex-direction: row-reverse;
+        height: 100%;
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+    text-align: center;
+    border: 1px solid var(--color-black, #000);
+    color: var(--color-black, #000);
+
+    &:hover {
+      background-color: var(--color-black, #000);
+      color: var(--color-white, #fff);
+    }
+  }
+}
