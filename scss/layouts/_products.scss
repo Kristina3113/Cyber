@@ -37,15 +37,11 @@
 
   &_list {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(auto-fit, minmax(163px, 1fr));
     gap: 16px;
 
     @include tablet {
-      grid-template-columns: repeat(3, auto);
-    }
-
-    @include desktop {
-      grid-template-columns: repeat(4, auto);
+      grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
     }
   }
 }
