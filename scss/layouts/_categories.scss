@@ -2,6 +2,10 @@
   padding: 4rem 0;
   background-color: rgba(250, 250, 250, 1);
 
+  @include tablet {
+    padding: 5rem 0;
+  }
+
   @include desktop {
     padding: 5rem 0;
   }
@@ -14,6 +18,10 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 3rem;
+    }
+
+    @include tablet {
+      margin-bottom: 32px;
     }
 
     @include desktop {
@@ -52,17 +60,24 @@
   //====== Categories list ======//
 
   &__list {
-    @include mobile {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+      grid-template-columns: repeat(3, max-content);
+      gap: 32px;
+      justify-items: center;
       align-items: center;
-      gap: 16px;
     }
 
     @include desktop {
-      flex-direction: row;
+      grid-template-columns: repeat(6, max-content);
       gap: 32px;
+      justify-items: center;
+      align-items: center;
     }
   }
 
@@ -74,9 +89,13 @@
 
     background: rgba(237, 237, 237, 1);
     border-radius: 15px;
-    width: 160px;
+    width: 140px;
     padding: 24px 0;
     border-style: none;
+
+    @include tablet {
+      width: 160px;
+    }
   }
 
   &__item--active {
