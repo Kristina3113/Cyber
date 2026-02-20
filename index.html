@@ -38,14 +38,26 @@
                 </div>
               </form>
 
+              <!-- Прихований чекбокс для керування меню -->
+              <input type="checkbox" id="toggle-menu">
+
               <nav class="header__nav">
                 <ul class="header__menu">
-                  <li class="header__link">Home</li>
-                  <li class="header__link">About</li>
-                  <li class="header__link">Contact Us</li>
-                  <li class="header__link">Blog</li>
+                  <li><a href="#" class="header__link">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Blog</a></li>
                 </ul>
               </nav>
+                  
+              <!-- Label, який виглядає як кнопка гамбургера -->
+              <label for="toggle-menu" class="header__humburger" aria-label="Toggle mobile menu">
+               <span class="header__humburger-bar"></span>
+               <span class="header__humburger-bar"></span>
+               <span class="header__humburger-bar"></span>
+              </label>
+
+
               <div class="header__actions">
                 <a href="#" class="header__action" aria-label="Favorites">
                   <svg class="header__icon" width="32" height="32">
@@ -62,15 +74,8 @@
                     <use href="/src/icons/symbol-defs.svg#icon-User"></use>
                   </svg>
                 </a>
-              </div>
-
-              <div class="mobile-menu">
-                <button class="header__mobile-toggle" aria-label="Open menu">
-                  <svg class="header__mobile-icon">
-                    <use href="/src/icons/symbol-defs.svg#icon-Burger"></use>
-                  </svg>
-                </button>
-              </div>
+              </div> 
+              
             </div>
           </div>
         </header>
@@ -497,7 +502,7 @@
             </div>
           </section>
 
-          <section class="deals-layout">
+          <!-- <section class="deals-layout">
             <div class="deals-layout__wrapper">
               <div class="deals-layout__card">
                 <div class="deals-layout__image-box">
@@ -540,7 +545,7 @@
                 </div>
               </div>
             </div>
-          </section>
+          </section> -->
 
           <section class="discounts">
             <div class="container">

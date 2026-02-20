@@ -34,6 +34,7 @@ body {
   font-style: normal;
   font-size: 0.875rem;
   text-size-adjust: 100%;
+  position: relative;
 }
 
 nav,
@@ -94,6 +95,10 @@ img,
 picture {
   max-width: 100%;
   display: block;
+}
+
+label {
+  cursor: pointer;
 }
 
 :target {
