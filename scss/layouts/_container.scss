@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  min-width: 25, 4375rem;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @media screen and (min-width: $bp-tablet) {
+    max-width: 50rem;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    max-width: 72rem;
+  }
+}

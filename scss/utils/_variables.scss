@@ -3,8 +3,27 @@
 
   --color-white: #ffffff; // Фон основного контенту, текст на темних кнопках
   --color-black: #000000; // Кнопки "Buy Now", текст, темний фон футера
-  --color-gray-100: #f5f5f5; // Легкий фон для карток продуктів
-  --color-gray-200: #ededed; // Легкий фон для додаткових секцій
-  --color-gray-300: #d4d4d4; // Межі або фонові елементи
   --color-dark-gray: #353535; // Акценти у секціяї з банерами
+}
+
+$bp-mobile: 20rem; // 320px
+$bp-tablet: 48rem; // 768px
+$bp-desktop: 72rem; // 1120px + padding 16
+
+@mixin desktop {
+  @media screen and (min-width: $bp-desktop) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $bp-tablet) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (min-width: $bp-mobile) {
+    @content;
+  }
 }
